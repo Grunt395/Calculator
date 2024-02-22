@@ -16,13 +16,17 @@ body {
 }
 
 .entry-bar {
-    text-align: center;
     background-color: white;
-    font-size: 64px;
     width: 50%;
+    height: 75px;
     margin: auto;
     border: 2px solid black;
     margin-bottom: 30px;
+}
+
+.entry {
+    font-size: 64px;
+    text-align: right;
 }
 
 .keypad {
@@ -30,9 +34,21 @@ body {
     text-align: center;
     grid-template-columns: 120px 120px 120px;
     justify-content: center;
+    /* border: 2px black; */
 }
 
-.key {
+.key,
+.operation,
+.equal,
+.clear {
     font-size: 32px;
     padding: 30px;
 }
+
+.clear {
+    grid-column: span 3;
+}
+
+/* .hidden {
+    display: none;
+} */
